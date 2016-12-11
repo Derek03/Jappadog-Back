@@ -17,6 +17,7 @@ class Welcome extends Application
 	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
 	public function index()
 	{
 
@@ -30,5 +31,23 @@ class Welcome extends Application
 		$this->data['SalesCost'] = '50,000';
 		$this->render(); 
 	}
-
+	/*
+    function __construct()
+    {
+        parent::__construct();
+        $this->data['pagetitle'] = 'Jappadog Assignment 2 (Server)';
+    }
+	*/
+    /**
+     * Sets up the form and renders it.
+     */
+	/*
+    function index()
+    {
+        $this->load->helper('formfields');
+        $this->data['title'] = 'Harandrew 101 (Server)';
+        $this->data['pagebody'] = 'welcome_message';
+        $this->render();
+    }
+    */
 }

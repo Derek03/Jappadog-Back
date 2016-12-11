@@ -48,7 +48,7 @@ DROP TABLE IF EXISTS `receiving`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `receiving` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
   `instock` int(10) NOT NULL,
   `receiving` int(10) NOT NULL,
