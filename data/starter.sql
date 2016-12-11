@@ -54,6 +54,7 @@ CREATE TABLE `receiving` (
   `receiving` int(10) NOT NULL,
   `measurement` int(10) NOT NULL,
   `href` varchar(128) NOT NULL,
+  `price` int(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -64,7 +65,7 @@ CREATE TABLE `receiving` (
 
 LOCK TABLES `receiving` WRITE;
 /*!40000 ALTER TABLE `receiving` DISABLE KEYS */;
-INSERT INTO `receiving` VALUES (1,'Pork Sausage',50,1,100,'Pork-Sausage'),(2,'Teriyaki Sauce',20,2,50,'Teriyaki-Sauce'),(3,'Mayo',30,2,50,'Mayo'),(4,'Seaweed',20,2,50,'Seaweed'),(5,'Bun',60,3,100,'Bun'),(6,'Radish',10,2,25,'Radish'),(7,'Soya Sauce',20,2,50,'Soya-sauce'),(8,'Cheese',10,2,50,'Cheese'),(9,'Onion',10,2,25,'Onion'),(10,'Special Dressing',20,2,50,'Special-Dressing'),(11,'Pork Cutlet',10,2,25,'Pork-Cutlet'),(12,'Cabbage',10,2,25,'Cabbage'),(13,'Avocado',10,1,25,'Avocado'),(14,'Cream Cheese',20,1,50,'Cream-Cheese');
+INSERT INTO `receiving` VALUES (1,'Pork Sausage',50,1,100,'Pork-Sausage', 100),(2,'Teriyaki Sauce',20,2,50,'Teriyaki-Sauce', 40),(3,'Mayo',30,2,50,'Mayo', 40),(4,'Seaweed',20,2,50,'Seaweed', 25),(5,'Bun',60,3,100,'Bun', 250),(6,'Radish',10,2,25,'Radish', 30),(7,'Soya Sauce',20,2,50,'Soya-sauce', 50),(8,'Cheese',10,2,50,'Cheese', 100),(9,'Onion',10,2,25,'Onion', 40),(10,'Special Dressing',20,2,50,'Special-Dressing', 60),(11,'Pork Cutlet',10,2,25,'Pork-Cutlet', 80),(12,'Cabbage',10,2,25,'Cabbage', 45),(13,'Avocado',10,1,25,'Avocado', 75),(14,'Cream Cheese',20,1,50,'Cream-Cheese', 40);
 /*!40000 ALTER TABLE `receiving` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
