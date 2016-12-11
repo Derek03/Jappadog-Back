@@ -22,7 +22,8 @@ class Receiving extends MY_Model
           ['field'=>'instock', 'label'=>'Instock Amount', 'rules'=> 'required|integer'],
           ['field'=>'receiving', 'label'=>'Box Amount', 'rules'=> 'required|integer'],
           ['field'=>'measurement', 'label'=>'Amount Per Box', 'rules'=> 'required|integer'],
-          ['field'=>'href', 'label'=>'Link Reference', 'rules'=> 'required']
+          ['field'=>'href', 'label'=>'Link Reference', 'rules'=> 'required'],
+          ['field'=>'price', 'label'=>'Link Reference', 'rules'=> 'required|decimal']
       ];
       return $config;
     }
