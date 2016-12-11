@@ -16,13 +16,14 @@ class Receiving extends MY_Model
 
     function rules()
     {
-        $config = [
-            ['field' => 'name', 'label' => 'Item name', 'rules' => 'required'],
-            ['field' => 'description', 'label' => 'Item description', 'rules' => 'required|max_length[256]'],
-            ['field' => 'price', 'label' => 'Item price', 'rules' => 'required|decimal'],
-            ['field' => 'picture', 'label' => 'Item picture', 'rules' => 'required'],
-            ['field' => 'category', 'label' => 'Menu category', 'rules' => 'required']
-        ];
-        return $config;
+      $config = [
+          ['field'=>'id', 'label'=>'Supplies Code', 'rules'=> 'required|integer'],
+          ['field'=>'name', 'label'=>'Supplies Name', 'rules'=> 'required'],
+          ['field'=>'instock', 'label'=>'Instock Amount', 'rules'=> 'required|integer'],
+          ['field'=>'receiving', 'label'=>'Box Amount', 'rules'=> 'required|integer'],
+          ['field'=>'measurement', 'label'=>'Amount Per Box', 'rules'=> 'required|integer'],
+          ['field'=>'href', 'label'=>'Link Reference', 'rules'=> 'required']
+      ];
+      return $config;
     }
 }
